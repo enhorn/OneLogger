@@ -15,7 +15,7 @@ public class OneFileLogger: OneLogger {
     /// A list of error fomratters. Will use the first formatter that produces a string for the given error.
     public var errorFormatters: [OneLoggerErrorFormatter] = []
 
-    /// URL to the file where the output  should go.
+    /// URL to the file where the output should go.
     public let fileURL: URL
 
     /// - Parameters:
