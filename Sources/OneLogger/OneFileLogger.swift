@@ -53,13 +53,15 @@ public class OneFileLogger: OneLogger {
 private extension OneFileLogger {
 
     func append(_ message: String, to fileURL: URL) {
-        if let handle = FileHandle(forWritingAtPath: fileURL.path), let data = message.data(using: .utf8) {
+        let withTimeStamp = "\(timestamp) \(message)"
+        
+        if let handle = FileHandle(forWritingAtPath: fileURL.path), let data = withTimeStamp.data(using: .utf8) {
             defer { handle.closeFile() }
             handle.seekToEndOfFile()
             handle.write(data)
         } else {
             do {
-                try message.write(to: fileURL, atomically: true, encoding: .utf8)
+                try withTimeStamp.write(to: fileURL, atomically: true, encoding: .utf8)
             } catch let error {
                 #if DEBUG
                 print("🚨 \(error)")
@@ -67,5 +69,19 @@ private extension OneFileLogger {
             }
         }
     }
+
+    private var timestamp: String {
+        DateFormatter.timeStamp.string(from: Date())
+    }
+
+}
+
+extension DateFormatter {
+
+    static let timeStamp: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss.SSS"
+        return formatter
+    }()
 
 }
