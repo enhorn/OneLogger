@@ -6,6 +6,8 @@ Uses four log levels: `info`, `debug`, `warning` and `error`.
 
 Basic `print` and `file` loggers are available by default.
 
+Used in [OneNetwork](https://github.com/enhorn/OneNetwork).
+
 Example usage:
 
 ```swift
