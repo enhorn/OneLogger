@@ -15,7 +15,7 @@ import OneLogger
 
 struct MyView: View {
 
-    private let logger = OnePrintLogger(level: .debug)
+    private let logger: OneLogger = OnePrintLogger(level: .debug)
 
     var body: some View {
         Button("Print statements") {
