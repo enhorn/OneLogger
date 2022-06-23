@@ -1,0 +1,15 @@
+name: Buld Demo App
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: macOS-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Resolve dependencies
+      run: cd Demo; xcodebuild -resolvePackageDependencies
+    - name: Build
+      run: cd Demo; xcodebuild -sdk macosx  -project Demo.xcodeproj -scheme OneLoggerDemo
