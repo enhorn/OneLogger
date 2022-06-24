@@ -11,7 +11,7 @@
 		8830CDFE285DBAA4002C7EFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8830CDFD285DBAA4002C7EFD /* ContentView.swift */; };
 		8830CE00285DBAA5002C7EFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8830CDFF285DBAA5002C7EFD /* Assets.xcassets */; };
 		8830CE04285DBAA5002C7EFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8830CE03285DBAA5002C7EFD /* Preview Assets.xcassets */; };
-		8830CE14285DBCF7002C7EFD /* OneLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 8830CE13285DBCF7002C7EFD /* OneLogger */; };
+		88E40B472864DF22008F5730 /* OneLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 88E40B462864DF22008F5730 /* OneLogger */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +22,6 @@
 		8830CE01285DBAA5002C7EFD /* Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Demo.entitlements; sourceTree = "<group>"; };
 		8830CE03285DBAA5002C7EFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8830CE11285DBC59002C7EFD /* OneLogger */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = OneLogger; path = ..; sourceTree = "<group>"; };
-		88DB329D2864D542006A735A /* OneLogger */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = OneLogger; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,7 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8830CE14285DBCF7002C7EFD /* OneLogger in Frameworks */,
+				88E40B472864DF22008F5730 /* OneLogger in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				8830CE11285DBC59002C7EFD /* OneLogger */,
-				88DB329D2864D542006A735A /* OneLogger */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -108,7 +106,7 @@
 			);
 			name = OneLoggerDemo;
 			packageProductDependencies = (
-				8830CE13285DBCF7002C7EFD /* OneLogger */,
+				88E40B462864DF22008F5730 /* OneLogger */,
 			);
 			productName = Demo;
 			productReference = 8830CDF8285DBAA4002C7EFD /* OneLoggerDemo.app */;
@@ -371,7 +369,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8830CE13285DBCF7002C7EFD /* OneLogger */ = {
+		88E40B462864DF22008F5730 /* OneLogger */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = OneLogger;
 		};

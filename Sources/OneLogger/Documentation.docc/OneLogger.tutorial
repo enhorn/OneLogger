@@ -1,0 +1,31 @@
+@Tutorials(name: "OneLogger") {
+	
+    @Intro(title: "OneLogger Tutorials") {
+        Here we will go through the premade loggers, as well as creating a custom logger.
+    }
+    
+    @Chapter(name: "OnePrintLogger") {
+		Tutorial for the premade OnePrintLogger.
+        @Image(source: OneLogger.png, alt: "One logger logo")
+        @TutorialReference(tutorial: "doc:PrintLogger")
+    }
+	
+	@Chapter(name: "OneFileLogger") {
+		Tutorial for the premade OneFileLogger.
+        @Image(source: OneLogger.png, alt: "One logger logo")
+		@TutorialReference(tutorial: "doc:FileLogger")
+	}
+	
+	@Chapter(name: "Error formatters") {
+		Tutorial for how to construct and use error formatters.
+        @Image(source: OneLogger.png, alt: "One logger logo")
+		@TutorialReference(tutorial: "doc:ErrorFormatters")
+	}
+    
+    @Chapter(name: "Custom logger") {
+        Tutorial for how to construct a custom logger with a bit of dynamic behavior.
+        @Image(source: OneLogger.png, alt: "One logger logo")
+        @TutorialReference(tutorial: "doc:CustomLogger")
+    }
+	
+}

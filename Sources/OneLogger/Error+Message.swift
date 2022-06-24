@@ -9,7 +9,7 @@ import Foundation
 
 extension Error {
 
-    func message(using errorFormatters: [OneLoggerErrorFormatter]) -> String {
+    public func message(using errorFormatters: [OneLoggerErrorFormatter]) -> String {
         for formatter in errorFormatters {
             if let message = formatter.format(self) {
                 return message

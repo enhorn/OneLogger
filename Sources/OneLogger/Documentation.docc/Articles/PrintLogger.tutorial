@@ -1,0 +1,30 @@
+@Tutorial(time: 2) {
+	
+    @Intro(title: "OnePrintLogger") {
+		OnePrintLogger is a pre-made plain print logger.
+		
+		It uses the standard logging levels and prefixes the output with colored emojis. 
+    }
+    
+    @Section(title: "Logging to the console") {
+		
+        @ContentAndMedia {
+            The basic print logger, no fuzz.
+        }
+        
+        @Steps {
+			
+            @Step {
+                First we create the logger.
+				@Code(name: "PrintLogger1.swift", file: PrintLogger1.swift)
+            }
+
+			@Step {
+				Then we print our statements.
+				@Code(name: "PrintLogger2.swift", file: PrintLogger2.swift)
+			}
+
+        }
+    }
+		
+}

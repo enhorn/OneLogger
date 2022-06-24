@@ -1,0 +1,33 @@
+@Tutorial(time: 5) {
+	
+    @Intro(title: "Custom logger") {
+		Following the OneLogger protocol, one can build custom loggers as well. 
+    }
+    
+    @Section(title: "Building a custom logger") {
+		
+        @ContentAndMedia {
+            Let's buld a custom logger that switches between print & file logging based on build configuration and reports warings and error to an error tracking service.
+        }
+        
+        @Steps {
+			
+            @Step {
+                First we create the basic parts of the logger.
+				@Code(name: "CustomLogger1.swift", file: CustomLogger1.swift)
+            }
+
+			@Step {
+				Then we add our local loggers.
+                @Code(name: "CustomLogger2.swift", file: CustomLogger2.swift)
+			}
+            
+            @Step {
+                And last, we our calls to our error tracking service.
+                @Code(name: "CustomLogger3.swift", file: CustomLogger3.swift)
+            }
+
+        }
+    }
+		
+}

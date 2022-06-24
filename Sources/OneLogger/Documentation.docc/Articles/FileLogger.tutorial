@@ -1,0 +1,30 @@
+@Tutorial(time: 2) {
+	
+    @Intro(title: "OneFileLogger") {
+		OneFileLogger is a pre-made file logger that takes a destination file URL.
+		
+		It uses the standard logging levels and prefixes the output with colored emojis and timestamps. 
+    }
+    
+    @Section(title: "Logging to a file") {
+		
+        @ContentAndMedia {
+            The basic file logger, no fuzz.
+        }
+        
+        @Steps {
+			
+            @Step {
+                First we create the logger.
+				@Code(name: "FileLogger1.swift", file: FileLogger1.swift)
+            }
+
+			@Step {
+				Then we print our statements.
+				@Code(name: "FileLogger2.swift", file: FileLogger2.swift)
+			}
+
+        }
+		
+    }
+}

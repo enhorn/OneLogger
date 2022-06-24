@@ -1,0 +1,40 @@
+@Tutorial(time: 5) {
+	
+    @Intro(title: "Error formatters") {
+		One logger comes with a protocol for error formatting.
+		
+		OnePrintLogger and OneFileLogger comes with the option to set a list of error formatters as a property.
+		
+		When building a custom logger, you can get the formatted message from an error by calling the function on the extension of Error:
+		```swift
+		error.message(using: errorFormatters)
+		```
+    }
+    
+    @Section(title: "Formatting errors") {
+		
+        @ContentAndMedia {
+            Lets build and use two formatters that each take care of a different group of domain specific errors.
+        }
+        
+        @Steps {
+			
+            @Step {
+                First we define our two error domains.
+				@Code(name: "ErrorFormatters1.swift", file: ErrorFormatters1.swift)
+            }
+
+			@Step {
+				Then we create an error formatter for each domain.
+				@Code(name: "ErrorFormatters2.swift", file: ErrorFormatters2.swift)
+			}
+            
+            @Step {
+                Create a logger with the error formatters and log your errors.
+                @Code(name: "ErrorFormatters3.swift", file: ErrorFormatters3.swift)
+            }
+
+        }
+		
+    }
+}
