@@ -8,6 +8,8 @@ Basic `print` and `file` loggers are available by default.
 
 Used in [OneNetwork](https://github.com/enhorn/OneNetwork).
 
+Comes with [DocC](https://developer.apple.com/documentation/docc) tutorials.
+
 Example usage:
 
 ```swift
